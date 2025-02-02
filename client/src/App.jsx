@@ -4,7 +4,7 @@ import { lazy } from 'react'
 const Home = lazy(() => import("./pages/Home"));
 const Login = lazy(() => import("./pages/Login"));
 const Chat = lazy(() => import("./pages/Chat"));
-
+const Groups = lazy(() => import("./pages/Groups"))
 
 function App() {
 
@@ -13,7 +13,8 @@ function App() {
       <Routes>        
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/Chat' element={<Chat />} />
+        <Route path='/chat' element={<Chat />} />
+        <Route path='/groups' element={<Groups />} />
       </Routes>
     </Router>
   )
